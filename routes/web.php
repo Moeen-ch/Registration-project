@@ -15,7 +15,7 @@ Route::post('login', [UserController::class, 'userLogin'])->name('post.login');
 Route::get('home', [UserController::class, 'home'])
     ->name('home.page')->middleware(ValidUser::class);
 
-Route::get('/', [UserController::class, 'index'])->name('register.index');
+Route::get('/register', [UserController::class, 'index'])->name('register.index');
 Route::post('register', [UserController::class, 'store'])->name('register.store');
 
 Route::get('show', [UserController::class, 'show'])

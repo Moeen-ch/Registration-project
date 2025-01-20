@@ -14,7 +14,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('Welcome');
+        return view('register');
     }
 
     public function store(Request $request)
