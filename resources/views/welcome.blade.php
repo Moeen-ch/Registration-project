@@ -25,7 +25,7 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
-    
+
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                         <div style="color: rgb(0, 225, 255); margin-bottom:5px">
                             {{ session('success') }}
                         </div>
-                    @endif 
+                    @endif
                     <form action="{{ route('register.store') }}" method="POST">
                         @csrf
                         <div class="row row-space">
@@ -67,11 +67,11 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label" >Birthday</label>
+                                    <label class="label">Birthday</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker"  type="date" name="birthday"
+                                        <input class="input--style-4 js-datepicker" type="date" name="birthday"
                                             value="{{ old('birthday') }}">
-                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar" ></i>
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                         @error('birthday')
                                             <div style="color: red">{{ $message }}</div>
                                         @enderror
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="input-group" >
+                                <div class="input-group">
                                     <label class="label">Gender</label>
                                     <div class="p-t-10">
                                         <label class="radio-container m-r-45">Male
