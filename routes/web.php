@@ -3,8 +3,8 @@
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\ValidUser;
-use Faker\Guesser\Name;
-use Illuminate\Support\Facades\Auth;
+// use Faker\Guesser\Name;
+// use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 // Routes for Users
